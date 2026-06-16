@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>OvenShare</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <aside>
+    <h1>OvenShare</h1>
+    <p class="tagline">Berlin's Newest Oven Sharing Platform</p>
+
+    <h2>Find your closest oven</h2>
+
+    <label for="postcodeSearch">Postal code</label>
+    <input id="postcodeSearch" type="text" placeholder="e.g. 10999" />
+
+    <button id="postcodeSearchBtn" type="button">Find closest oven</button>
+    <button id="resetPLZBtn" type="button">See all ovens</button>
+
+    <p id="message"></p>
+
+    <hr />
+
+    <h2>Filters</h2>
+
+    <label for="filterType">Oven type</label>
+    <select id="filterType">
+      <option value="all">All ovens</option>
+      <option value="Convection Oven">Convection Oven</option>
+      <option value="Deck Oven">Deck Oven</option>
+      <option value="Wood-Fired Oven">Wood-Fired Oven</option>
+      <option value="Pizza Oven">Pizza Oven</option>
+    </select>
+
+    <label for="filterTemp">Minimum temperature</label>
+    <select id="filterTemp">
+      <option value="0">Any temperature</option>
+      <option value="250">250°C+</option>
+      <option value="300">300°C+</option>
+      <option value="350">350°C+</option>
+      <option value="400">400°C+</option>
+    </select>
+
+    <label for="filterCost">Maximum hourly cost</label>
+    <select id="filterCost">
+      <option value="999">Any price</option>
+      <option value="10">€10/hour or less</option>
+      <option value="15">€15/hour or less</option>
+      <option value="20">€20/hour or less</option>
+    </select>
+
+    <p id="ovenCount"></p>
+
+    <button id="resetFiltersBtn" type="button">Reset filters</button>
+    <button id="seeBookingsBtn" type="button">See confirmed bookings</button>
+  </aside>
+
+  <div id="map"></div>
+
+  <!-- BOOKING & CHECKOUT MODAL -->
+  <div id="bookingModal" class="hidden">
+    <div class="modal-content large-modal">
+      <button id="closeCheckoutBtn" class="close-button" type="button">×</button>
+
+      <h2>Book an oven</h2>
+
+      <form id="bookingForm">
+        <label for="selectedOven">Selected oven</label>
+        <select id="selectedOven" required></select>
+
+        <label for="customerName">Your name</label>
+        <input id="customerName" type="text" placeholder="e.g. Lynn" required />
+
+        <label for="bookingDate">Date</label>
+        <input id="bookingDate" type="date" required />
+
+        <label for="bookingTime">Time</label>
+        <select id="bookingTime" required></select>
+
+        <label for="bookingHours">Number of hours</label>
+        <input
+          id="bookingHours"
+          type="number"
+          min="1"
+          max="8"
+          value="1"
+          required
+        />
+
+        <button type="submit">Add to checkout</button>
+      </form>
+
+      <h2>Checkout</h2>
+      <div id="checkoutSummary">
+        <p>No booking selected yet.</p>
+      </div>
+
+      <div class="modal-actions">
+        <button id="confirmCheckoutBtn" type="button">Confirm checkout</button>
+        <button id="clearCartBtn" type="button">Clear cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIRMED BOOKINGS MODAL -->
+  <div id="bookingsModal" class="hidden">
+    <div class="modal-content large-modal">
+      <h2>Confirmed bookings</h2>
+
+      <div id="bookingList"></div>
+
+      <h3 id="grandTotal">Total: €0</h3>
+
+      <div class="modal-actions">
+        <button id="closeConfirmationBtn" type="button">OK</button>
+        <button id="clearBookingsBtn" type="button">Clear all bookings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIRMATION MESSAGE MODAL -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <p id="modalText"></p>
+
+      <button id="yesBtn" type="button">Yes</button>
+      <button id="noBtn" type="button">No</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

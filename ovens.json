@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Kreuzberg Kitchen",
+    "type": "Deck Oven",
+    "maxTemp": "300°C",
+    "hourlyPrice": 15,
+    "notes": "Good for sourdough, pizza, and large batches.",
+    "lat": 52.499,
+    "lng": 13.418,
+    "postcode": "10997"
+  },
+  {
+    "id": 2,
+    "name": "Wedding Confectionary",
+    "type": "Convection Oven",
+    "maxTemp": "260°C",
+    "hourlyPrice": 8,
+    "notes": "Best for cakes, cookies, and pastries!",
+    "lat": 52.548,
+    "lng": 13.365,
+    "postcode": "13347"
+  },
+  {
+    "id": 3,
+    "name": "Neukölln Bake Space",
+    "type": "Deck Oven",
+    "maxTemp": "320°C",
+    "hourlyPrice": 18,
+    "notes": "Great for artisan bread.",
+    "lat": 52.481,
+    "lng": 13.435,
+    "postcode": "12043"
+  },
+  {
+    "id": 4,
+    "name": "Prenzlauer Berg Pizza Oven",
+    "type": "Pizza Oven",
+    "maxTemp": "400°C",
+    "hourlyPrice": 20,
+    "notes": "Plan your pizza parties here!",
+    "lat": 52.538,
+    "lng": 13.424,
+    "postcode": "10405"
+  },
+  {
+    "id": 5,
+    "name": "Mariendorf Wood-Fired Oven",
+    "type": "Wood-Fired Oven",
+    "maxTemp": "375°C",
+    "hourlyPrice": 25,
+    "notes": "Bake artisan bread and pizzas with a smoky flavor. Firewood (Apple) provided.",
+    "lat": 52.441,
+    "lng": 13.366,
+    "postcode": "12105"
+  },
+  {
+    "id": 6,
+    "name": "Victoria's Deck Oven",
+    "type": "Deck Oven",
+    "maxTemp": "280°C",
+    "hourlyPrice": 14,
+    "notes": "Get that perfect crust on your bread and pizza!",
+    "lat": 52.504,
+    "lng": 13.479,
+    "postcode": "10317"
+  },
+  {
+    "id": 7,
+    "name": "Delicatessen Confectionary",
+    "type": "Convection Oven",
+    "maxTemp": "260°C",
+    "hourlyPrice": 10,
+    "notes": "Bake your next party batch of cookies and pastries here.",
+    "lat": 52.517,
+    "lng": 13.461,
+    "postcode": "10247"
+  },
+  {
+    "id": 8,
+    "name": "Mitte Artisan Oven",
+    "type": "Deck Oven",
+    "maxTemp": "310°C",
+    "hourlyPrice": 18,
+    "notes": "Ideal for your Artisan bread and pizza creations.",
+    "lat": 52.522,
+    "lng": 13.393,
+    "postcode": "10117"
+  },
+  {
+    "id": 9,
+    "name": "Pankow Park Oven",
+    "type": "Wood-Fired Oven",
+    "maxTemp": "395°C",
+    "hourlyPrice": 25,
+    "notes": "Located beside the park, perfect for pizza parties. Firewood (Oak) provided.",
+    "lat": 52.567,
+    "lng": 13.391,
+    "postcode": "13187"
+  },
+  {
+    "id": 10,
+    "name": "Plötzensee Wood-Fired Oven",
+    "type": "Wood-Fired Oven",
+    "maxTemp": "375°C",
+    "hourlyPrice": 20,
+    "notes": "Bread and Pizzas right by the Lake. Firewood (Beech) provided.",
+    "lat": 52.543,
+    "lng": 13.328,
+    "postcode": "13351"
+  },
+  {
+    "id": 11,
+    "name": "Charlottenburg Kitchen",
+    "type": "Deck Oven",
+    "maxTemp": "310°C",
+    "hourlyPrice": 25,
+    "notes": "Spacious kitchen with high-temperature oven for the crispiest pizzas and artisan bread.",
+    "lat": 52.525,
+    "lng": 13.304,
+    "postcode": "10589"
+  },
+  {
+    "id": 12,
+    "name": "Andy's Puffs and Pastries",
+    "type": "Convection Oven",
+    "maxTemp": "250°C",
+    "hourlyPrice": 12,
+    "notes": "Located minutes from the U-Bahn. Great for pastries and cakes. Molds and pans available.",
+    "lat": 52.512,
+    "lng": 13.311,
+    "postcode": "10625"
+  },
+  {
+    "id": 13,
+    "name": "Hoffmanns Desserts",
+    "type": "Convection Oven",
+    "maxTemp": "240°C",
+    "hourlyPrice": 15,
+    "notes": "Two large ovens available for your next baking project. Utensils and tools provided.",
+    "lat": 52.490,
+    "lng": 13.325,
+    "postcode": "10717"
+  },
+  {
+    "id": 14,
+    "name": "Westside Bakery and School",
+    "type": "Pizza Oven",
+    "maxTemp": "375°C",
+    "hourlyPrice": 22,
+    "notes": "Large space with multiple overs. For pizza parties or lessons.",
+    "lat": 52.472,
+    "lng": 13.299,
+    "postcode": "14199"
+  },
+  {
+    "id": 15,
+    "name": "SouthEnd Oven Space",
+    "type": "Wood-Fired Oven",
+    "maxTemp": "355°C",
+    "hourlyPrice": 12,
+    "notes": "Firewood (Pine) provided. Large parking and outdoor space for pizza parties.",
+    "lat": 52.449,
+    "lng": 13.348,
+    "postcode": "12169"
+  }
+]
